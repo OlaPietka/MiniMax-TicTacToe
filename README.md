@@ -8,7 +8,7 @@ Well known game with implemented MiniMax algorithm.
 </p>
 
 ## Algorithm
-`    
+`
 def algorithm(self, s, depth, player):
     state = copy(s)
     if player == Type.X:
