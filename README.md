@@ -8,14 +8,14 @@ Well known game with implemented MiniMax algorithm.
 </p>
 
 ## Algorithm
-`
+```
 def algorithm(self, s, depth, player):
     state = copy(s)
     if player == Type.X:
         best = [(-1, -1), -100]
     else:
         best = [(-1, -1), 100]
-
+        
     if state.is_end() or depth == 0:
         value = self.evaluate(state, depth)
         return [(-1, -1), value]
@@ -37,4 +37,4 @@ def algorithm(self, s, depth, player):
                 best = score
         print("best:", best[1], "player:", player)
     return best
-`
+```
